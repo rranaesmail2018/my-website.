@@ -1,0 +1,247 @@
+<!Doctype html>
+<html>
+    <head>
+<title>HTML practices</title>
+
+<!--I will use stlye tag (CSS) to manage how the table look-->
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td{
+        border:1px solid black;
+        padding:8px;
+        text-align:center;
+    }
+
+    td, :first-child{
+        text-align: left;
+    }
+</style>
+    </head>
+
+    <body>
+
+        <!--Task 5:links to jump to bottom-->
+        <a href="#bottom"> jump to bottom </a>
+        <!--_________________________________________________________-->
+
+        <!-- Task 4: Envelope Format:-->
+         <div style="position:absolute;top:25px; left:10px"> 
+            <p>From:<br>Dilbert H.<br>1234 Anim Street<br>P.O. Box 22222</p>
+         </div>
+         <div style="position:absolute;top:100px;left:500px"> 
+            <p>to:<br>Someone A. Person<br>5555 Street Avenue<br>Metrpolitan, Metropolis 11111</p>
+         </div>
+
+
+
+        <p><br><br><br><br><br><br><br><br><br>
+            <p>_________________________________________________________</p>
+        <p>Task 1: numbers 1 - 10 in different color:</p>
+        <p style="color:red">1</p>
+        <p style="color:green">2</p>
+        <p style="color:blue">3</p>
+        <p style="color:orange">4</p>
+        <p style="color:black">5</p>
+        <p style="color:palegoldenrod">6</p>
+        <p style="color:gray">7</p>
+        <p style="color:gold">8</p>
+        <p style="color:silver">9</p>
+        <p style="color:purple">10</p>
+
+
+
+        <p>_________________________________________________________</p>
+        <p>Task 2: The squares of the numbers 1 - 10</p>
+        <p>1<sup>2</sup>=1</p>
+        <p>2<sup>2</sup>=4</p>
+
+        <p>3<sup>2</sup>=9</p>
+
+        <p>4<sup>2</sup>=16</p>
+
+        <p>5<sup>2</sup>=25</p>
+
+        <p>6<sup>2</sup>=36</p>
+
+        <p>7<sup>2</sup>=49</p>
+
+        <p>8<sup>2</sup>=64</p>
+
+        <p>9<sup>2</sup>=81</p>
+
+        <p>10<sup>2</sup>=100</p>
+
+
+        <p>_________________________________________________________</p>
+        <p>Task 3:Ordered list and unordered list</p>
+         
+            <p> Ordered list: Fruits:</p>
+            <ol>
+                <li> Apples</li>
+                <li> Bananas</li>
+                <li> Oranges</li>
+                <li> Grapes</li>
+            </ol>
+
+            <p> Unordered list: Fruits:</p>
+            <ul>
+                <li> Apples</li>
+                <li> Bananas</li>
+                <li> Oranges</li>
+                <li> Grapes</li>
+            </ul>
+        </p>
+        
+
+        <p>_________________________________________________________</p>
+        <P>Task 6: links to four different pages on four different websites that should all open in a new window</P> 
+        <a href="https://www.google.com/" target="_blank">Google</a><br>
+        <a href="https://www.Shein.com/" target="_blank">Shein</a><br>
+        <a href="https://www.Youtube.com/" target="_blank">Youtube</a><br>
+        <a href="https://www.Lazada.com/" target="_blank">Lazada</a>
+
+        <p>_________________________________________________________</p>
+         <p>Task 7: Display five different images. Skip two lines between each image. Each image should have a title</p>
+
+        
+         <img src="Images/Image_1.jpg" alt="Image 1" title="Image 1"  style="width:300px ; height: 300px" ><br><br>
+         <img src="Images/Image_2.jpg" alt="Image 2" title="Image 2" style="width:300px ; height: 300px"><br><br>
+         <img src="Images/Image_3.jpg" alt="Image 3" title="Image 3" style="width:300px ; height: 300px"><br><br>
+         <img src="Images/Image_4.jpg" alt="Image 4" title="Image 4" style="width:300px ; height: 300px"><br><br> 
+         <img src="Images/Image_5.jpg" alt="Image 4" title="Image 4" style="width:300px ; height: 300px"><br><br>
+
+         <p>_________________________________________________________</p>
+         <p>Task 8: Display an image that has a border of size 2, a width of 200, and a height of 200.</p>
+         <img src="Images/Image_1.jpg" alt="Bordered image"  title="Bordered image" style= "border: 2px solid black; width:200px; height:200px">
+         
+         <p>_________________________________________________________</p>
+         <p>Task 9: Display an image that when clicked will link to itself and will display the image in the browser by itself</p> <br>
+
+         <p>Please click the image to link to itself and display the image in the browser by itself</p> 
+         <a href="Images/Image_1.jpg" target="_blank"><img src="Images/Image_1.jpg" alt="Image 1" title="Image 1"  style="width:300px ; height: 300px" >
+        </a>
+
+        <p>_________________________________________________________</p>
+        <p>Task 10: Display an image that when clicked will link to a search engine of your choice (should be opened in a new window)</p> <br>
+
+        <p>Please click the image to link to a search engine (Google)</p> 
+        <a href="https://www.google.com" target="_blank"><img src="Images/Image_2.jpg" alt="Image 2" title="Image 2"  style="width:300px ; height: 300px" >
+        </a>
+
+        <p>_________________________________________________________</p>
+        <p>Task 11: Pick 5 corporations and hunt down their current stock prices. Place them in a neatly arranged table with their name, symbol, last price, 52wk high, 52wk low and PE ratio. The end result should look like the following.
+             Notice that he first column is aligned left and the rest are centered.</p>
+
+             <table> 
+
+                 <!--colspan="6" means that this header cell spans across six columns, ensuring the title covers the full width of the table.-->
+                <th colspan="6" style="font-size: 2em; text-align: center;">My tech stock picks</th>
+                
+
+                <!--row for table heading-->
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>current</th>
+                    <th>52WK HI</th>
+                    <th>52WK LO</th>
+                    <th>P/E RATIO</th>
+                </tr>
+
+
+                <tr> 
+                <!-- row 1 data-->
+
+                    <td>Microsoft</td>
+                    <td>MSFT</td>
+                    <td>86-3/8</td>
+                    <td>119-15/16</td>
+                    <td>75-1/2</td>
+                    <td>56.09</td>
+                 </tr>
+
+                <tr> 
+                  <!-- row 2 data-->
+
+                    <td>Cisco Sistem</td>
+                    <td>CSCO</td>
+                    <td>72-1/8</td>
+                    <td>82</td>
+                    <td>24-13/16</td>
+                    <td>400.69</td>
+                </tr>
+
+                 <tr> 
+                 <!-- row 3 data-->
+
+                    <td>America online</td>
+                    <td>AOL</td>
+                    <td>63</td>
+                    <td>95-13/16</td>
+                    <td>38-15/32</td>
+                    <td>350.00</td>
+                 </tr>
+
+
+                <tr> 
+                  <!-- row 4 data-->
+
+                    <td>Qwest communications</td>
+                    <td>Q</td>
+                    <td>44-7/16</td>
+                    <td>66</td>
+                    <td>25-3/4</td>
+                    <td>74.06</td>
+                </tr> 
+
+                <tr> 
+                 <!-- row 5 data-->
+
+                    <td>Dell computers</td>
+                    <td>DELL</td>
+                    <td>53-59/64</td>
+                    <td>59-11/16</td>
+                    <td>31-3/8</td>
+                    <td>86.97</td>
+                </tr>
+             </table>
+
+  
+
+
+
+
+        
+
+
+
+
+a
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <p>_________________________________________________________</p>
+         <!--Following Task 5:links to jump to top-->
+         <a id="bottom" href="#top"> jump to top</a>
+
+        
+
+    </body>
+</html>
+
+ 
